@@ -25,7 +25,7 @@ SECRET_KEY = '@0tdw9s0e#je)p11_(ntwb5fff6de#1qs@=!)96nrqzy#xb4er'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'edusimapi.oglabs.info']
 
 
 # Application definition
