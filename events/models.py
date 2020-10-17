@@ -29,6 +29,7 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=120, default='')
     karma =  models.IntegerField(choices=KARMA, default=0)
     points = models.IntegerField(default=0)
+    cost = models.FloatField(default=0)
 
 class Odds(models.Model):
     VAR_TYPES = (
