@@ -41,5 +41,5 @@ class Odds(models.Model):
     )
     Choice = models.ForeignKey(Event, on_delete=models.CASCADE)
     variable_type = models.CharField(max_length=120, default='', choices=VAR_TYPES)
-    variable_value = models.CharField(default='', max_length=12)
-    variable_odds = models.FloatField(default=0)
+    variable_value = models.CharField(default='', max_length=12, blank=True)
+    variable_odds = models.FloatField(default=0, blank=True)
